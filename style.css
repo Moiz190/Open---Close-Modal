@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient( to bottom right,rgb(58, 239, 136), rgb(16, 59, 34));
+    height: 100vh;
+}
+.bg-white{
+    background-color: #fff;
+}
+.pointer{
+    cursor: pointer;
+}
+.absolute{
+    position: absolute;
+}
+.flex{
+    display: flex;
+}
+.justify-around{
+    justify-content: space-around;
+}
+.modal-buttons-container{
+    padding-top: 2rem;
+}
+.modal-buttons-container > button{
+    padding: 1rem 0.5rem;
+    border: 0;
+    font-weight: bold;
+    border-radius: 25px;
+}
+.modal{
+    height: 100vh;
+    width: 100%;
+    top: 0;
+}
+.hidden{
+    display: none;
+}
+.modal-description-overlay{
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+.modal-buttons-container >button:hover{
+    background-color: #dbdada;
+}
+.modal-description-container{
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    min-width: 300px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+}
+.modal-description-container h2{
+    padding-bottom: 1rem;
+}
+.close-btn-container{
+    font-size: 1.5rem;
+    right: 1rem;
+    top: 0.5rem;
+}
+@media (min-width:768px){
+    .modal-buttons-container > button{
+        padding: 1rem 2rem;
+        font-size: 1.2rem;
+    }
+    .modal-description-container h2{
+        font-size: 2rem;
+    }
+    .modal-description-container p{
+        font-size: 1.2rem;
+    }
+    .modal-description-container{
+        max-width: 600px;
+    }
+}

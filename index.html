@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Modal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="modalContainer">
+      <div class="modal-buttons-container flex justify-around">
+        <button id="modalbtn" class="pointer bg-white">
+          Show Modal 1
+        </button>
+        <button id="modalbtn" class="pointer bg-white">
+          Show Modal 2
+        </button>
+        <button id="modalbtn" class="pointer bg-white">
+          Show Modal 3
+        </button>
+      </div>
+      
+      <div class="flex absolute modal hidden" id="modal">
+          <div onclick="closeModal()" class="modal-description-overlay absolute hidden flex" id="overlayContainer">
+        </div>
+        <div class="modal-description-container bg-white hidden" id="modalContainer">
+            <span class="close-btn-container pointer absolute" onclick="closeModal()">&#10006;</span>
+          <h2>Modal Description</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
+            error, impedit similique quia, excepturi aliquam asperiores sed
+            molestiae, ipsa possimus odit inventore laboriosam laudantium
+            distinctio tempore nesciunt nemo nulla ad obcaecati praesentium
+            voluptates ducimus quos repellat delectus! Eum debitis id ratione,
+            rem dolore consectetur facere similique odit, natus asperiores
+            magnam dicta ad cupiditate magni vero temporibus quidem rerum,
+            dignissimos consequatur corporis molestias. Natus exercitationem
+            harum pariatur quam tempora neque perferendis, perspiciatis aperiam
+            consequatur in illo dolor animi, soluta magni beatae maiores iure
+            facilis dolores ipsa doloremque corporis et voluptates asperiores
+            magnam? Dolor natus aspernatur quasi repellendus illo quod veniam
+            voluptate?
+        </p>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
